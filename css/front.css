@@ -1,0 +1,67 @@
+.vote {
+  background-image: url('../image/vote.png'); /* Ensure path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+/* Optional: Dark overlay to make text more readable */
+.vote .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Ensure text sits above overlay */
+.vote .position-relative {
+  z-index: 2;
+}
+.boxmain {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../image/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    /* Ensure ghost reserves space but is invisible */
+  .position-relative.d-flex.justify-content-center {
+  position: relative;
+  width: fit-content; /* shrink container to fit ghost text width */
+  margin: 0 auto; /* center container */
+}
+
+/* Ghost text reserves space */
+#ghost {
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Actual typing text is positioned absolute on top */
+#typing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255, 255, 255, 0.75); /* caret */
+  animation: blink-caret 0.8s step-end infinite;
+  /* ensure font styles match ghost */
+}
+
+/* Caret blinking */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: rgba(255, 255, 255, 0.75); }
+}

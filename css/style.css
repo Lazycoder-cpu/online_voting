@@ -1,0 +1,72 @@
+.boxmain {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../image/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+ .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Ensure text sits above overlay */
+.vote .position-relative {
+  z-index: 2;
+}
+
+
+#togglePassword {
+    position: absolute;
+    right: 0.45rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem; /* Optional, keeps consistent size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    background: transparent;
+    pointer-events: auto;
+}
+
+.btn-google {
+  border-radius: 3px;
+  height: 38px;
+  padding: 0 20px; /* horizontal padding only */
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px; /* space between icon and text */
+}
+
+.btn-google:hover,
+.btn-google:focus {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.vote h4 {
+  color: white !important;
+  word-wrap: break-word;
+}
+
+ @media (max-width: 767.98px) {
+      .vote {
+        min-height: auto;
+        padding: 2rem 1rem;
+      }
+    }
