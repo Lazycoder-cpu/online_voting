@@ -16,7 +16,7 @@ try {
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     ]);
 
-    echo "Connected successfully to the database '$db_name' using PDO as user '$db_user'.";
+   // echo "Connected successfully to the database '$db_name' using PDO as user '$db_user'.";
 
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());

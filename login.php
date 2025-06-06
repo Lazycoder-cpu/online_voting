@@ -14,7 +14,7 @@
   <div class="container-fluid boxmain d-flex justify-content-center align-items-center min-vh-100 bg-light p-3">
     <div class="col-11 col-sm-9 col-md-5 col-lg-4 bg-white p-4 rounded shadow-sm">
       <form class="w-100" method="POST" action="#">
-        <h4 class="mb-4 text-center text-primary fw-bold">Create a New Account</h4>
+        <h4 class="mb-4 text-center text-primary fw-bold">Welcome Back!</h4>
 
         <!-- Username -->
         <div class="mb-3">
